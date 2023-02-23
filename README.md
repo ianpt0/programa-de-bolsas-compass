@@ -1,6 +1,6 @@
 
 
-## Seja bem-vindo(a) ao meu registro de progresso no programa de bolsas da Compass.UOL__
+### Seja bem-vindo(a) ao meu registro de progresso no programa de bolsas da Compass.UOL
 
 __[Linkedin](https://www.linkedin.com/in/ian-sobral-0b54701a9/)__ - Aqui você consegue checar meu linkedin :bookmark_tabs:
 
@@ -19,7 +19,7 @@ Busco desafios diários para me tornar o melhor programador possível. Conseguir
 
 ---
 
-## Timeline de aprendizado Compass
+# Timeline de aprendizado Compass
 
 - Git
 
