@@ -28,5 +28,4 @@ Aqui pude consolidar bases importantes para o dia-a-dia de trabalho de um desenv
 - GNU/Linux
 
 Aqui descobri novas formas de manipular arquivos e lidar com dados. Otimizando bastante o tempo para tarefas que no Windows demandaria muito mais.
-
-Foquei bastante em Regex, permissões, comandos básicos e, pessoalmente, me interessei muito pelo ambiente de tiling window manager e tenho usado o Xmonad para fixar diariamente os conceitos e comandos Linux. 
+Foquei bastante em Regex, permissões, comandos básicos e, pessoalmente, me interessei muito pelo ambiente de tiling window manager e tenho usado o Xmonad para fixar os conceitos e comandos Linux. 
