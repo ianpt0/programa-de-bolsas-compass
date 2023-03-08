@@ -35,7 +35,7 @@ Foquei bastante em Regex, permissões, comandos básicos e, pessoalmente, me int
 Foi muito interessante lidar com os Datasets da Biblioteca e Loja ao longo dessa Sprint. Além de consolidar os conhecimentos técnicos de SQL na prática, eu também pude perceber a infinita gama de possibilidades através da interação e manipulação de tabelas em bancos de dados relacionais.
 A parte de export da Querie em CSV no final da Sprint foi importante, pois eu já havia consumido dados de arquivos CSV anteriormente, mas estar realizando o processo inverso de gerar o CSV partindo de uma Querie SQL foi uma experiência bem empolgante.
 
-- BIG DATA FUNDAMENTOS 3.0
+- Big Data Fundamentos 3.0
 
 A prática com um SGBD no módulo anterior foi essencial para absorver o conteúdo desse curso e construir uma boa base teórica sobre Big Data e sua arquitetura de forma menos abstrata.
 Aqui pude compreender a diferença e usabilidade de bancos de dados relacionais e bancos NoSQL, entendendo a importância da gestão Cluster dentro do universo Big Data e desmistificando o processo de ETL no ambiente horizontal de Cluster. 
