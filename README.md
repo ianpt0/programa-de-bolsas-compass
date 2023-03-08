@@ -29,3 +29,14 @@ Aqui pude consolidar bases importantes para o dia-a-dia de trabalho de um desenv
 
 Aqui descobri novas formas de manipular arquivos e lidar com dados. Otimizando bastante o tempo para tarefas que no Windows demandaria muito mais.
 Foquei bastante em Regex, permissões, comandos básicos e, pessoalmente, me interessei muito pelo ambiente de tiling window manager e tenho usado o Xmonad para fixar os conceitos e comandos Linux. 
+
+- SQL
+
+Foi muito interessante lidar com os Datasets da Biblioteca e Loja ao longo dessa Sprint. Além de consolidar os conhecimentos técnicos de SQL na prática, eu também pude perceber a infinita gama de possibilidades através da interação e manipulação de tabelas em bancos de dados relacionais.
+A parte de export da Querie em CSV no final da Sprint foi importante, pois eu já havia consumido dados de arquivos CSV anteriormente, mas estar realizando o processo inverso de gerar o CSV partindo de uma Querie SQL foi uma experiência bem empolgante.
+
+- BIG DATA FUNDAMENTOS 3.0
+
+A prática com um SGBD no módulo anterior foi essencial para absorver o conteúdo desse curso e construir uma boa base teórica sobre Big Data e sua arquitetura de forma menos abstrata.
+Aqui pude compreender a diferença e usabilidade de bancos de dados relacionais e bancos NoSQL, entendendo a importância da gestão Cluster dentro do universo Big Data e desmistificando o processo de ETL no ambiente horizontal de Cluster. 
+As demonstrações no ambiente AWS Glue para ETL foram bem legais, os conceitos de Data Lake e DW ficam bem claros. A estrutura do curso foi muito bem arquitetada didaticamente.
