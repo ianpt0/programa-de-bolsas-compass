@@ -11,7 +11,7 @@ __[NASA Web Scraping](https://github.com/ianpt0/web-scraping-nasa/)__ - Um dos m
 # Apresentação 
 
 Olá! Sou Ian, moro no Rio de Janeiro e estudo Análise e Desenvolvimento de Sistemas na UNICESUMAR, atualmente no segundo período.
-Estudo programação há 1 ano, onde me dediquei principalmente à estudos de front-end (HTML, CSS, Javascript e React), algorítmos e estrutura de dados. 
+Estudo programação há 1 ano, onde me dediquei principalmente à estudos de front-end (HTML, CSS, Javascript e React), algoritmos e estrutura de dados. 
 
 Atualmente venho me interessado pela área de dados. Por conta disso, tenho estudado bastante Python e bibliotecas de ETL, técnicas de web scraping, além da parte conceitual de arquitetura de ambiente Cloud (Data Lake e Data Warehouse) e um breve contato com Databricks.
 
