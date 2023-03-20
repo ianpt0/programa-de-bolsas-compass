@@ -4,7 +4,9 @@
 
 __[Linkedin](https://www.linkedin.com/in/ian-sobral-0b54701a9/)__ - Aqui você consegue checar meu linkedin :bookmark_tabs:
 
-__[NASA Web Scraping](https://github.com/ianpt0/web-scraping-nasa/)__ - Um dos meus projetos recentes usando Python e Beautiful Soup :snake:
+__[UFO Data Analysis](https://github.com/ianpt0/ufo-shapes-analysis/)__ - Análise de Dataset usando Pandas, Matplotlib e Seaborn :chart_with_downwards_trend:
+
+__[NASA Web Scraping](https://github.com/ianpt0/web-scraping-nasa/)__ - Projeto de estudo usando Python e Beautiful Soup para técnicas de Web Scraping :snake:
 
 ---
 
