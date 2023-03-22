@@ -42,3 +42,7 @@ A parte de export da Querie em CSV no final da Sprint foi importante, pois eu j�
 A prática com um SGBD no módulo anterior foi essencial para absorver o conteúdo desse curso e construir uma boa base teórica sobre Big Data e sua arquitetura de forma menos abstrata.
 Aqui pude compreender a diferença e usabilidade de bancos de dados relacionais e bancos NoSQL, entendendo a importância da gestão Cluster dentro do universo Big Data e desmistificando o processo de ETL no ambiente horizontal de Cluster. 
 As demonstrações no ambiente AWS Glue para ETL foram bem legais, os conceitos de Data Lake e DW ficam bem claros. A estrutura do curso foi muito bem arquitetada didaticamente.
+
+- Python 
+
+O desafio de ETL partindo do CSV dos atores sem o uso de bibliotecas externas ou do módulo CSV foi bem interessante. Deu pra consolidar bases bem essencias de Python como iteração, condicionais e principalmente dicionário que foi de extrema importância na parte de limpeza e transformação. Entender como essas bibliotecas operam "por trás dos panos" se faz um diferencial na hora de usa-las futuramente para solucionar novos desafios.
