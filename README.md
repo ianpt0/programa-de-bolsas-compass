@@ -63,4 +63,4 @@ Os containers são tão essenciais à modo de que não imagino como seria possí
 
 O primeiro contato com a AWS foi incrível, principalmente com a proposta "gameficada" que foi adotada para o ensino de ferramentas essencias como o S3 e EC2.
 Aqui foi possível aprender como criar instâncias de máquinas virtuais EC2, configurar servidores web e bancos de dados, gerenciar e armazenar dados de forma eficiente e segura, além de aprender estratégias e soluções de escalabilidade usando a AWS no lugar de servidores físicos.
-O jogo roporcionou uma oportunidade única de aprender e praticar habilidades essenciais da computação em nuvem de maneira interativa e eficaz.
+O jogo proporcionou uma oportunidade única de aprender e praticar habilidades essenciais da computação em nuvem de maneira interativa e eficaz.
