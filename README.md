@@ -46,3 +46,15 @@ As demonstrações no ambiente AWS Glue para ETL foram bem legais, os conceitos 
 - Python 
 
 O desafio de ETL partindo do CSV dos atores sem o uso de bibliotecas externas ou do módulo CSV foi bem interessante. Deu pra consolidar bases bem essencias de Python como iteração, condicionais e principalmente dicionário que foi de extrema importância na parte de limpeza e transformação. Entender como essas bibliotecas operam "por trás dos panos" se faz um diferencial na hora de usa-las futuramente para solucionar novos desafios.
+
+- Programação funcional
+
+O repositório https://github.com/dunossauro/python-funcional foi essencial para compreensão de paradigmas de programação. É um assunto que não é comumente falado, mas sinto que não é possível absorção completa de assuntos como otimização de código, processamento de dados e refratoração sem compreender esses paradigmas.
+Foi muito interessante ter o conhecimento e perspectiva a ponto de funcionalidade e benefícios de outros paradigmas além do orientado a objetos que eu sou mais acostumado.
+O fato do Python ser uma linguagem de múltiplos paradigmas tornou a aprendizagem bem dinâmica e isso ficou bem visível com os exercícios usando lambda no lugar de funções convencionais.
+Essa parte do processo de aprendizado me abriu aos olhos para conceitos como "Clean Code" e "Big O".
+
+- Docker
+
+Similar à sensação que tive ao estudar mais profundamente o Git aqui no programa de bolsas, o Docker abriu os olhos para como um dev profissional opera em ambiente empresarial e coletivo.
+Os containers são tão essenciais à modo de que não imagino como seria possível administrar ambientes, bibliotecas e suas versões em projetos à nível empresarial antes dele. 
