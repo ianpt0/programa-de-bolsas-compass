@@ -58,3 +58,9 @@ Essa parte do processo de aprendizado me abriu aos olhos para conceitos como "Cl
 
 Similar à sensação que tive ao estudar mais profundamente o Git aqui no programa de bolsas, o Docker abriu os olhos para como um dev profissional opera em ambiente empresarial e coletivo.
 Os containers são tão essenciais à modo de que não imagino como seria possível administrar ambientes, bibliotecas e suas versões em projetos à nível empresarial antes dele. 
+
+- AWS | Game Cloud Quest 
+
+O primeiro contato com a AWS foi incrível, principalmente com a proposta "gameficada" que foi adotada para o ensino de ferramentas essencias como o S3 e EC2.
+Aqui foi possível aprender como criar instâncias de máquinas virtuais EC2, configurar servidores web e bancos de dados, gerenciar e armazenar dados de forma eficiente e segura, além de aprender estratégias e soluções de escalabilidade usando a AWS no lugar de servidores físicos convencionais.
+Em resumo, a experiência com a AWS foi incrível e proporcionou uma oportunidade única de aprender e praticar habilidades essenciais da computação em nuvem de maneira interativa e eficaz.
