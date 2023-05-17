@@ -1,0 +1,25 @@
+WITH grouped AS (
+  SELECT 
+    nome, 
+    SUM(total) as total_sum,
+    FLOOR(ano/10)*10 as decade
+  FROM 
+    "meubanco"."consulta"
+  WHERE 
+    ano >= 1950
+  GROUP BY
+    nome,
+    FLOOR(ano/10)*10
+)
+SELECT decade, nome, total_sum
+FROM (
+  SELECT 
+    nome, 
+    total_sum, 
+    decade,
+    ROW_NUMBER() OVER (PARTITION BY decade ORDER BY total_sum DESC) as rn
+  FROM 
+    grouped
+) tmp
+WHERE rn <= 3
+ORDER BY decade ASC, total_sum DESC
