@@ -64,3 +64,9 @@ Os containers são tão essenciais à modo de que não imagino como seria possí
 O primeiro contato com a AWS foi incrível, principalmente com a proposta "gameficada" que foi adotada para o ensino de ferramentas essencias como o S3 e EC2.
 Aqui foi possível aprender como criar instâncias de máquinas virtuais EC2, configurar servidores web e bancos de dados, gerenciar e armazenar dados de forma eficiente e segura, além de aprender estratégias e soluções de escalabilidade usando a AWS no lugar de servidores físicos.
 O jogo proporcionou uma oportunidade única de aprender e praticar habilidades essenciais da computação em nuvem de maneira interativa e eficaz.
+
+- Laboratórios de AWS S3, Athena e Lambda
+
+O AWS S3 se mostrou como a espinha dorsal de todos os laboratórios, permitindo a segurança, a escalabilidade e a disponibilidade de que precisávamos para gerir grandes volumes de dados de forma eficiente, como o arquivo CSV de nomes que usamos aqui. Seu design simples e confiável nos permitiu focar no desenvolvimento de funcionalidades importantes, em vez de preocupar-nos com a infraestrutura.
+
+O AWS Lambda, com sua capacidade de execução de código sem servidor, nos permitiu implementar funcionalidades de back-end de forma bem rápida e eficiente e o AWS Athena nos proporcionou a capacidade de realizar consultas SQL diretamente nos nossos dados armazenados no S3. Isso simplificou significativamente nosso pipeline de análise de dados, permitindo-nos extrair insights valiosos de forma rápida.
