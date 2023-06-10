@@ -20,8 +20,8 @@ Terceira Forma Normal (3NF): A 3NF busca eliminar as dependências transitivas. 
 ## 2 - Visualizar nossas colunas e dados
 Através da viualização global vou conseguir reconhecer os padrões que fogem das regras formais e vou começar a desenhar a modelagem lógica desse dataset. 
 
-![Imagem Demonstrativa](/programa-de-bolsas-compass/sprint-09/assigment-1-modelagem-relacional-normalizacao/img/1.png)
-![Imagem Demonstrativa](/programa-de-bolsas-compass/sprint-09/assigment-1-modelagem-relacional-normalizacao/img/1-1.png)
+![Imagem Demonstrativa](programa-de-bolsas-compass/sprint-09/assigment-1-modelagem-relacional-normalizacao/img/1.png)
+![Imagem Demonstrativa](programa-de-bolsas-compass/sprint-09/assigment-1-modelagem-relacional-normalizacao/img/1-1.png)
 
 
 # 2 - Desenho da modelagem lógica
@@ -148,7 +148,7 @@ CREATE TABLE tb_vendedor (
 );
 ```
 
-![Imagem Demonstrativa](/programa-de-bolsas-compass/sprint-09/assigment-1-modelagem-relacional-normalizacao/img/2.png)
+![Imagem Demonstrativa](programa-de-bolsas-compass/sprint-09/assigment-1-modelagem-relacional-normalizacao/img/2.png)
 
 ---
 # 3 - Export do arquivo SQL
