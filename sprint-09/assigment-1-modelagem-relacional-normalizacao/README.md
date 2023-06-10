@@ -1,6 +1,6 @@
 # Normalização de modelagem relacional do arquivo concessionaria.sqlite
 
-Abaixo será descrito o passo-a-passo necessário para normalização de um banco de dados sqlite. No exemplo abaixo usaremos o dBeaver como ferramenta principal.
+Aqui vou descrever o passo-a-passo necessário para normalização de um banco de dados SQLite. No exemplo abaixo usarei o DBeaver como ferramenta principal.
 
 ## 1 - Definir o que é necessário para a normalização
 
@@ -26,7 +26,7 @@ Através da viualização global vou conseguir reconhecer os padrões que fogem 
 
 # 2 - Desenho da modelagem lógica
 
-Conseguiríamos alcançar uma normalização interessante e seguindo os padrões através da seguinte estrutura:
+Consegui reconhecer as anomalias e alcançar uma normalização interessante e dentro dos padrões citados anteriormente através da seguinte estrutura:
 
 - Tabela "tb_locacao":
 idLocacao (identificador da locação)
@@ -74,7 +74,7 @@ Agora vou seguir com as Queries pra tornar esse esquema real.
 
 # 3 - Criação das tabelas normalizadas
 
-Com o meu banco de dados já conectado no dBeaver, vou criar um novo script SQL com as instruções da tabela normalizada nos padrões que defini no passo anterior. 
+Com o meu banco de dados já conectado no DBeaver, vou criar um novo Script SQL com as instruções da tabela normalizada nos padrões que defini no passo anterior. 
 
 ```sql
 -- Tabela tb_cliente
