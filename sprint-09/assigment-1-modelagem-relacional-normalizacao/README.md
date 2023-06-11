@@ -18,53 +18,52 @@ Através da viualização global vou conseguir reconhecer os padrões que fogem 
 ![Imagem Demonstrativa](img/1-1.png)
 
 
-# 2 - Desenho da modelagem lógica
+## 3 - Desenho da modelagem lógica
 
 Consegui reconhecer as anomalias e alcançar uma normalização interessante dentro dos padrões citados anteriormente através da seguinte estrutura:
 
-- Tabela "tb_cliente":
-idCliente (identificador do cliente)
-nomeCliente (nome do cliente)
-cidadeCliente (cidade do cliente)
-estadoCliente (estado do cliente)
-paisCliente (país do cliente)
+### Tabela "tb_cliente":
+* idCliente (identificador do cliente)
+* nomeCliente (nome do cliente)
+* cidadeCliente (cidade do cliente)
+* estadoCliente (estado do cliente)
+* paisCliente (país do cliente)
 
-- Tabela "tb_carro":
-idCarro (identificador do carro)
-kmCarro (quilometragem do carro)
-classiCarro (classificação do carro)
-marcaCarro (marca do carro)
-modeloCarro (modelo do carro)
-anoCarro (ano do carro)
-idCombustivel (identificador do combustível)
+### Tabela "tb_carro":
+* idCarro (identificador do carro)
+* kmCarro (quilometragem do carro)
+* classiCarro (classificação do carro)
+* marcaCarro (marca do carro)
+* modeloCarro (modelo do carro)
+* anoCarro (ano do carro)
+* idCombustivel (identificador do combustível)
 
-- Tabela "tb_combustivel":
-idCombustivel (identificador do combustível)
-tipoCombustivel (tipo de combustível)
+### Tabela "tb_combustivel":
+* idCombustivel (identificador do combustível)
+* tipoCombustivel (tipo de combustível)
 
-- Tabela "tb_locacao":
-idLocacao (chave estrangeira referenciando a tabela "tb_locacao")
-idCliente (identificador do cliente)
-idCarro (identificador do carro)
-idVendedor (identificador do vendedor)
-dataLocacao (data de locação)
-horaLocacao (hora de locação)
-qtdDiaria (quantidade diária)
-virDiaria (valor diário)
-dataEntrega (data de entrega)
-horaEntrega (hora de entrega)
+### Tabela "tb_locacao":
+* idLocacao (chave estrangeira referenciando a tabela "tb_locacao")
+* idCliente (identificador do cliente)
+* idCarro (identificador do carro)
+* idVendedor (identificador do vendedor)
+* dataLocacao (data de locação)
+* horaLocacao (hora de locação)
+* qtdDiaria (quantidade diária)
+* virDiaria (valor diário)
+* dataEntrega (data de entrega)
+* horaEntrega (hora de entrega)
 
-- Tabela "tb_vendedor":
-idVendedor (identificador do vendedor)
-nomeVendedor (nome do vendedor)
-sexoVendedor (sexo do vendedor)
-estadoVendedor (estado do vendedor)
+### Tabela "tb_vendedor":
+* idVendedor (identificador do vendedor)
+* nomeVendedor (nome do vendedor)
+* sexoVendedor (sexo do vendedor)
+* estadoVendedor (estado do vendedor)
 
 Agora que cada tabela tem uma chave primária definida e não há dependências nas colunas, vou seguir com as Queries pra tornar esse esquema real.
 
----
 
-# 3 - Criação das tabelas normalizadas
+## 4 - Criação de script para normalização das tabelas
 
 Com o meu banco de dados já conectado no DBeaver, vou criar um novo Script SQL com as instruções da tabela normalizada nos padrões que defini no passo anterior. 
 
@@ -123,9 +122,10 @@ CREATE TABLE tb_locacao (
   );
 ```
 
-![Imagem Demonstrativa](img/diagrama.png)
 
----
-# 3 - Export do arquivo SQL
+## 4 - Export do arquivo SQL e do diagrama
 Feito! O arquivo SQL pode ser conferido aqui nessa pasta, com o nome de "Script-1.sql"
 
+O diagrama da nova estruturação que foi feita pode ser conferido abaixo.
+
+![Imagem Demonstrativa](img/diagrama.png)
