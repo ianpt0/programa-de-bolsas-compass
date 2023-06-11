@@ -84,8 +84,7 @@ Feito! O arquivo SQL gerado pode ser conferido nesta pasta com o nome de "modelo
 
 Agora, seguindo com maior detalhes sobre as views com base no modelo dimensional proposto, temos as seguintes métricas:
 
-![Imagem Demonstrativa](dim_cliente/diagrama-vw.png)
-
+![Imagem Demonstrativa](img/diagrama-vw.png)
 
 ### Métricas relacionadas à dimensão Cliente:
 * Número total de clientes
