@@ -10,12 +10,6 @@ As formas normais são um conjunto de regras que definem os requisitos de organi
 
 As formas normais mais comuns são a Primeira Forma Normal (1NF), a Segunda Forma Normal (2NF) e a Terceira Forma Normal (3NF). E são essas que usarei como parâmetro para normalização desse banco de dados.
 
-Primeira Forma Normal (1NF): Nesta forma normal, os dados são organizados em tabelas, onde cada coluna contém apenas valores atômicos e cada tabela possui uma chave primária única. Não são permitidos valores repetidos ou múltiplos valores em uma única célula.
-
-Segunda Forma Normal (2NF): A 2NF visa eliminar as dependências parciais nos dados. Isso significa que cada coluna em uma tabela deve depender completamente da chave primária da tabela. Se houver colunas que dependem apenas de uma parte da chave primária, elas devem ser movidas para uma tabela separada.
-
-Terceira Forma Normal (3NF): A 3NF busca eliminar as dependências transitivas. Isso significa que as colunas que não fazem parte da chave primária devem depender apenas da chave primária, não de outras colunas não chave. Se houver dependências transitivas, essas colunas devem ser movidas para uma tabela separada.
-
 
 ## 2 - Visualizar nossas colunas e dados
 Através da viualização global vou conseguir reconhecer os padrões que fogem das regras formais e vou começar a desenhar a modelagem lógica desse dataset. 
@@ -26,11 +20,7 @@ Através da viualização global vou conseguir reconhecer os padrões que fogem 
 
 # 2 - Desenho da modelagem lógica
 
-Consegui reconhecer as anomalias e alcançar uma normalização interessante e dentro dos padrões citados anteriormente através da seguinte estrutura:
-
-- Tabela "tb_locacao":
-idLocacao (identificador da locação)
-iddiente (identificador do cliente)
+Consegui reconhecer as anomalias e alcançar uma normalização interessante dentro dos padrões citados anteriormente através da seguinte estrutura:
 
 - Tabela "tb_cliente":
 idCliente (identificador do cliente)
@@ -52,15 +42,17 @@ idCombustivel (identificador do combustível)
 idCombustivel (identificador do combustível)
 tipoCombustivel (tipo de combustível)
 
-- Tabela "tb_locacao_detalhes":
+- Tabela "tb_locacao":
 idLocacao (chave estrangeira referenciando a tabela "tb_locacao")
+idCliente (identificador do cliente)
+idCarro (identificador do carro)
+idVendedor (identificador do vendedor)
 dataLocacao (data de locação)
 horaLocacao (hora de locação)
 qtdDiaria (quantidade diária)
 virDiaria (valor diário)
 dataEntrega (data de entrega)
 horaEntrega (hora de entrega)
-idVendedor (identificador do vendedor)
 
 - Tabela "tb_vendedor":
 idVendedor (identificador do vendedor)
@@ -68,7 +60,7 @@ nomeVendedor (nome do vendedor)
 sexoVendedor (sexo do vendedor)
 estadoVendedor (estado do vendedor)
 
-Agora vou seguir com as Queries pra tornar esse esquema real.
+Agora que cada tabela tem uma chave primária definida e não há dependências nas colunas, vou seguir com as Queries pra tornar esse esquema real.
 
 ---
 
@@ -78,77 +70,60 @@ Com o meu banco de dados já conectado no DBeaver, vou criar um novo Script SQL 
 
 ```sql
 -- Tabela tb_cliente
+-- Criando a tabela tb_cliente
 CREATE TABLE tb_cliente (
-  idCliente INT,
+  idCliente INT PRIMARY KEY,
   nomeCliente VARCHAR(100),
   cidadeCliente VARCHAR(40),
   estadoCliente VARCHAR(40),
-  paisCliente VARCHAR(40),
-  PRIMARY KEY (idCliente)
+  paisCliente VARCHAR(40)
 );
 
--- Tabela tb_carro
+-- Criando a tabela tb_combustivel
+CREATE TABLE tb_combustivel (
+  idCombustivel INT PRIMARY KEY,
+  tipoCombustivel VARCHAR(20)
+);
+
+-- Criando a tabela tb_carro
 CREATE TABLE tb_carro (
-  idCarro INT,
+  idCarro INT PRIMARY KEY,
   kmCarro INT,
   classiCarro VARCHAR(50),
   marcaCarro VARCHAR(80),
   modeloCarro VARCHAR(80),
   anoCarro INT,
   idCombustivel INT,
-  PRIMARY KEY (idCarro),
-  FOREIGN KEY (idCombustivel) REFERENCES tb_combustivel (idCombustivel)
+  FOREIGN KEY (idCombustivel) REFERENCES tb_combustivel(idCombustivel)
 );
 
--- Tabela tb_combustivel
-CREATE TABLE tb_combustivel (
-  idCombustivel INT,
-  tipoCombustivel VARCHAR(20),
-  PRIMARY KEY (idCombustivel)
+-- Criando a tabela tb_vendedor
+CREATE TABLE tb_vendedor (
+  idVendedor INT PRIMARY KEY,
+  nomeVendedor VARCHAR(15),
+  sexoVendedor SMALLINT,
+  estadoVendedor VARCHAR(40)
 );
 
--- Tabela tb_locacao
+-- Criando a tabela tb_locacao
 CREATE TABLE tb_locacao (
-  idLocacao INT,
+  idLocacao INT PRIMARY KEY,
   idCliente INT,
   idCarro INT,
   idVendedor INT,
   dataLocacao DATETIME,
   horaLocacao TIME,
   qtdDiaria INT,
-  virDiaria DECIMAL(18,2),
+  virDiaria DECIMAL(18, 2),
   dataEntrega DATE,
   horaEntrega TIME,
-  PRIMARY KEY (idLocacao),
-  FOREIGN KEY (idCliente) REFERENCES tb_cliente (idCliente),
-  FOREIGN KEY (idCarro) REFERENCES tb_carro (idCarro),
-  FOREIGN KEY (idVendedor) REFERENCES tb_vendedor (idVendedor)
-);
-
--- Tabela tb_locacao_detalhes
-CREATE TABLE tb_locacao_detalhes (
-  idLocacao INT,
-  dataLocacao DATETIME,
-  horaLocacao TIME,
-  qtdDiaria INT,
-  virDiaria DECIMAL(18,2),
-  dataEntrega DATE,
-  horaEntrega TIME,
-  PRIMARY KEY (idLocacao),
-  FOREIGN KEY (idLocacao) REFERENCES tb_locacao (idLocacao)
-);
-
--- Tabela tb_vendedor
-CREATE TABLE tb_vendedor (
-  idVendedor INT,
-  nomeVendedor VARCHAR(15),
-  sexoVendedor SMALLINT,
-  estadoVendedor VARCHAR(40),
-  PRIMARY KEY (idVendedor)
-);
+  FOREIGN KEY (idCliente) REFERENCES tb_cliente(idCliente),
+  FOREIGN KEY (idCarro) REFERENCES tb_carro(idCarro),
+  FOREIGN KEY (idVendedor) REFERENCES tb_vendedor(idVendedor)
+  );
 ```
 
-![Imagem Demonstrativa](img/2.png)
+![Imagem Demonstrativa](img/diagrama.png)
 
 ---
 # 3 - Export do arquivo SQL
