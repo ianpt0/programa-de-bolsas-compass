@@ -99,9 +99,7 @@ Algumas alterações foram feitas nas perguntas para melhor aproveitamento dos d
 
 **Perguntas:** 
 
-- Top 10 filmes com maior quantidade de votos
-
-Criei a view "Top10_Filmes_Mais_Votados" 
+### Top 10 filmes com maior quantidade de votos
 
 ![Imagem Demonstrativa](img/votos.png)
 
@@ -121,7 +119,7 @@ ORDER BY col4 DESC
 LIMIT 10;
 ```
 
-- Filmes mais populares por produtora
+### Filmes mais populares por produtora
 
 ![Imagem Demonstrativa](img/produtora.png)
 
@@ -145,7 +143,7 @@ JOIN (
 ON refined.col6 = sub.Empresa_de_producao AND refined.col4 = sub.Max_Votos;
 ```
 
-- Filmes mais antigos de cada produtora
+### Filmes mais antigos de cada produtora
 
 ![Imagem Demonstrativa](img/antigo.png)
 
@@ -174,7 +172,7 @@ ORDER BY
 ```
 
 
-- Filmes mais populares por país de cada produtora
+### Filmes mais populares por país de cada produtora
 
 ![Imagem Demonstrativa](img/pais.png)
 
