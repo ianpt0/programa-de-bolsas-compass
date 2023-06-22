@@ -3,6 +3,7 @@ Antes de criar o Sketch do meu Dashboard no Figma, preciso ter bem definido o me
 Isso foi definido na __[Sprint 8](https://github.com/ianpt0/programa-de-bolsas-compass/tree/master/sprint-08)__ mas farei algumas adições e alterações para enriquecer nossa análise, segue ela:
 
 **Tema:** Produtoras
+
 **Objetivo:** Investigar os países onde a maioria dos filmes de Drama/Romance foram produzidos e descobrir quais as produtoras que possuem maior diversidade cultural de produção.
 
 - Total de filmes de drama/romance de cada produtora 
