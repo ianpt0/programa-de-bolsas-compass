@@ -4,6 +4,8 @@ Isso foi definido na __[Sprint 8](https://github.com/ianpt0/programa-de-bolsas-c
 
 **Tema:** Produtoras
 
+**Teoria:** As produtoras são muito limitadas aos gêneros de filmes que são de sucesso em seu nicho e não investem em novos.
+
 **Objetivo:** Investigar as produtoras para descobrir quais possuem maior variedade de gênero em suas produções e o orçamento que é disponibilizado para cada um deles.
 
 ps: primeiro devo investigar a variedade dos gêneros de filmes por produtora para que a análise posterior do orçamento faça sentido.
